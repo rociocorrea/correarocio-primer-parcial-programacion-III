@@ -1,0 +1,92 @@
+body {
+    font-family: 'DM Sans', 'Manrope';
+    margin: 0;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    padding: 10px;
+}
+
+h1,
+h4 {
+    margin-left: 30px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+a:hover {
+    color: red;
+}
+
+.icono {
+    width: 90px;
+    height: 90px;
+}
+
+.titulo {
+    padding-top: 15px;
+}
+
+.hero {
+    background-image: url("assets/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Catálogo */
+.slideshows{
+    display: flex;
+}
+
+.mySlides1 {
+    display: none;
+}
+
+.mySlides2 {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    flex: 1;
+}
+
+/* Caption text */
+.text {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
