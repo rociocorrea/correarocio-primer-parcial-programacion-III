@@ -2,54 +2,54 @@
 const noblesDeportivos = [
     {
         nombre: "Audi A3",
-        imagen: "/assets/nobles-y-deportivos/audi-a3.png"
+        imagen: "assets/nobles-y-deportivos/audi-a3.png"
     },
     {
         nombre: "Chevrolet Cruze",
-        imagen: "/assets/nobles-y-deportivos/chevrolet-cruze.png"
+        imagen: "assets/nobles-y-deportivos/chevrolet-cruze.png"
     },
     {
         nombre: "Fiat Kronnos",
-        imagen: "/assets/nobles-y-deportivos/fiat-kronnos.png"
+        imagen: "assets/nobles-y-deportivos/fiat-kronnos.png"
     },
     {
         nombre: "Nissan Sentra",
-        imagen: "/assets/nobles-y-deportivos/nissan-sentra.png"
+        imagen: "assets/nobles-y-deportivos/nissan-sentra.png"
     },
     {
         nombre: "Toyota Corolla",
-        imagen: "/assets/nobles-y-deportivos/toyota-corolla.png"
+        imagen: "assets/nobles-y-deportivos/toyota-corolla.png"
     },
     {
         nombre: "Volkswagen Golf",
-        imagen: "/assets/nobles-y-deportivos/volkswagen-golf.png"
+        imagen: "assets/nobles-y-deportivos/volkswagen-golf.png"
     }
 ];
 
 const premiumSuperdeportivos = [
     {
         nombre: "Aston Martin DB11",
-        imagen: "/assets/premiums-y-superdeportivos/aston-martin-db11.png"
+        imagen: "assets/premiums-y-superdeportivos/aston-martin-db11.png"
     },
     {
         nombre: "Audi R8",
-        imagen: "/assets/premiums-y-superdeportivos/audi-r8.png"
+        imagen: "assets/premiums-y-superdeportivos/audi-r8.png"
     },
     {
         nombre: "Chevrolet Corvette",
-        imagen: "/assets/premiums-y-superdeportivos/chevrolet-corvette.png"
+        imagen: "assets/premiums-y-superdeportivos/chevrolet-corvette.png"
     },
     {
         nombre: "Ford Mustang",
-        imagen: "/assets/premiums-y-superdeportivos/ford-mustang.png"
+        imagen: "assets/premiums-y-superdeportivos/ford-mustang.png"
     },
     {
         nombre: "Mercedes Benz AMG",
-        imagen: "/assets/premiums-y-superdeportivos/mercedes-benz-amg.png"
+        imagen: "assets/premiums-y-superdeportivos/mercedes-benz-amg.png"
     },
     {
         nombre: "Porsche 911",
-        imagen: "/assets/premiums-y-superdeportivos/porsche-911.png"
+        imagen: "assets/premiums-y-superdeportivos/porsche-911.png"
     }
 ];
 
