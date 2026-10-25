@@ -56,47 +56,25 @@ a:hover {
     background-size: cover;
     background-position: center;
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero strong {
+    color: white;
+    font-size: 30px;
+    max-width: 550px;
+    padding-right: 30px;
 }
 
 .footer {
-    margin-top: 50px;
+    margin: 30px;
     text-align: center;
 }
 
 /* Catálogo */
-.slideshows{
-    display: flex;
-}
-
-.mySlides1 {
-    display: none;
-}
-
-.mySlides2 {
-    display: none;
-}
-
-/*img {
-    vertical-align: middle;
-}
-
-/* Slideshow container */
-.slideshow-container {
-    flex: 1;
-}
-
-/* Caption text */
-.text {
-    color: black;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-/* Nobles y deportivos */
 .imagenes{
     display: flex;
     flex-wrap: wrap;
@@ -117,6 +95,7 @@ a:hover {
     background-color: rgb(197, 197, 197);
 }
 
-.titulo-catalogo{
+.titulo-seccion{
     text-align: center;
+    padding-top: 10px;
 }

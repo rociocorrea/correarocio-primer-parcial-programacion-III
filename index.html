@@ -11,6 +11,10 @@
     <link rel="icon" type="image/png" href="assets/icono.png">
     <link rel="stylesheet" href="index.css">
 
+    <!-- Importación de js con 'defer' para que se ejecute luego de que 
+     se cargue el HTML -->
+    <script src="/index.js" defer></script>
+
     <!-- Importación de fuentes Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,18 +32,21 @@
             <h4>Una selección curada de autos nobles, deportivos y superdeportivos</h4>
         </div>
     </header>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="pages/catalogo.html">Catálogo</a>
-            </li>
-        </ul>
-    </nav>
     <main>
         <section class="hero">
+            <strong>DESCUBRÍ</strong>
+            <strong>NUESTRA</strong>
+            <strong>COLECCIÓN</strong>
+        </section>
+
+        <section id="deportivos">
+            <h2 class="titulo-seccion">Nobles y deportivos</h2>
+            <div class="imagenes" id="noblesydeportivos"></div>
+        </section>
+
+        <section id="superdeportivos">
+            <h2 class="titulo-seccion">Premiums y superdeportivos</h2>
+            <div class="imagenes" id="premiumysuperdeportivos"></div>
         </section>
     </main>
 

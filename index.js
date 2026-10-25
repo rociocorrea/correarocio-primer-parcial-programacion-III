@@ -1,31 +1,83 @@
-let slideIndex = [1, 1];
+/* Creación de array de objetos que representan a cada auto */
+const noblesDeportivos = [
+    {
+        nombre: "Audi A3",
+        imagen: "/assets/nobles-y-deportivos/audi-a3.png"
+    },
+    {
+        nombre: "Chevrolet Cruze",
+        imagen: "/assets/nobles-y-deportivos/chevrolet-cruze.png"
+    },
+    {
+        nombre: "Fiat Kronnos",
+        imagen: "/assets/nobles-y-deportivos/fiat-kronnos.png"
+    },
+    {
+        nombre: "Nissan Sentra",
+        imagen: "/assets/nobles-y-deportivos/nissan-sentra.png"
+    },
+    {
+        nombre: "Toyota Corolla",
+        imagen: "/assets/nobles-y-deportivos/toyota-corolla.png"
+    },
+    {
+        nombre: "Volkswagen Golf",
+        imagen: "/assets/nobles-y-deportivos/volkswagen-golf.png"
+    }
+];
 
-/* Class the members of each slideshow group with different CSS classes */
-let slideId = ["mySlides1", "mySlides2"]
-showSlides(1, 0);
-showSlides(1, 1);
+const premiumSuperdeportivos = [
+    {
+        nombre: "Aston Martin DB11",
+        imagen: "/assets/premiums-y-superdeportivos/aston-martin-db11.png"
+    },
+    {
+        nombre: "Audi R8",
+        imagen: "/assets/premiums-y-superdeportivos/audi-r8.png"
+    },
+    {
+        nombre: "Chevrolet Corvette",
+        imagen: "/assets/premiums-y-superdeportivos/chevrolet-corvette.png"
+    },
+    {
+        nombre: "Ford Mustang",
+        imagen: "/assets/premiums-y-superdeportivos/ford-mustang.png"
+    },
+    {
+        nombre: "Mercedes Benz AMG",
+        imagen: "/assets/premiums-y-superdeportivos/mercedes-benz-amg.png"
+    },
+    {
+        nombre: "Porsche 911",
+        imagen: "/assets/premiums-y-superdeportivos/porsche-911.png"
+    }
+];
 
-function plusSlides(n, no) {
-    showSlides(slideIndex[no] += n, no);
+/* Función para crear el HTML y mostrar los autos */
+function mostrarAutos(autos, contenedorId) {
+    /* Comienzo con una variable vacía a la que voy a concatenar luego
+    el HTML necesario para visualizar todos los autos */
+    let html = "";
+
+    /* Recorro el array de autos pasado por parámetro
+    (uno de los dos que cree previamente)  y por cada auto
+    creo el bloque de HTML. Utilizo ${auto.imagen} y ${auto.nombre}
+    para acceder a valores del objeto*/
+    autos.forEach(auto => {
+        html += `
+            <div class="item">
+                <img src="${auto.imagen}" alt="${auto.nombre}"> 
+                <span class="caption">${auto.nombre}</span>
+            </div>
+        `;
+    });
+
+    /* Aquí accedo al DOM a través de getElementById,
+    que en mi caso será "noblesydeportivos" o "premiumysuperdeportivos"
+    y agrego el html con .innerHTML = html */
+    document.getElementById(contenedorId).innerHTML = html;
 }
 
-function showSlides(n, no) {
-    let i;
-    let x = document.getElementsByClassName(slideId[no]);
-
-    if (n > x.length) 
-        { slideIndex[no] = 1 }
-
-    if (n < 1) 
-        { slideIndex[no] = x.length }
-
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-
-    x[slideIndex[no] - 1].style.display = "block";
-
-    setTimeout(() => {
-        plusSlides(n, no)
-    }, 3000);
-} 
+/* Llamo a la función creada dos veces, para cada sección */
+mostrarAutos(noblesDeportivos, "noblesydeportivos");
+mostrarAutos(premiumSuperdeportivos, "premiumysuperdeportivos");
