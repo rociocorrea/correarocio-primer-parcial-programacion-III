@@ -91,6 +91,12 @@ a:hover {
     margin-bottom: 15px;
 }
 
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .caption{
     background-color: rgb(197, 197, 197);
 }
@@ -98,4 +104,43 @@ a:hover {
 .titulo-seccion{
     text-align: center;
     padding-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .icono {
+        width: 60px;
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-left: 15px;
+    }
+
+    h4 {
+        font-size: 10px;
+        margin-left: 15px;
+    }
+
+    .hero {
+        height: 20vh;
+        min-height: 220px;
+    }
+
+    .hero strong {
+        font-size: 22px;
+        padding-right: 0;
+    }
+
+    .titulo-seccion {
+        font-size: 20px;
+    }
+
+    #deportivos{
+        margin: 20px;
+    }
+
+    #superdeportivos{
+        margin: 20px;
+    }
 }
